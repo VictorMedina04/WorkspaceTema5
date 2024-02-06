@@ -44,16 +44,21 @@ public class CrudNota {
 		return nota;
 	}
 
+	public void modificarTitulo(String titulo) {
+
+	}
+
 	public void borrarNota(int id) {
-		if (buscarNotaById(id) != null) {
+		if (!lista.isEmpty()) {
 			lista.remove(buscarNotaById(id));
 		}
 	}
 
 	public void mostrarNotas() {
 		for (Nota nota : lista) {
-
-			System.out.println(nota);
+			if (!lista.isEmpty()) {
+				System.out.println(nota);
+			}
 		}
 	}
 

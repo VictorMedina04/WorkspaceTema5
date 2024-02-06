@@ -16,7 +16,7 @@ public class Principal {
 
 		System.out.println(crudNota.contarNotas());
 		crudNota.mostrarNotas();
-		System.out.println("--------------------");
+		System.out.println("--------------------------------------------------------------------------------");
 
 		crudNota.borrarNota(2);
 		System.out.println(crudNota.contarNotas());
