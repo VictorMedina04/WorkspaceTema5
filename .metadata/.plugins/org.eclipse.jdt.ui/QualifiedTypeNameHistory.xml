@@ -7,4 +7,7 @@
     <fullyQualifiedTypeName name="ejercicio01.Nota"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="ejercicio01.CrudNota"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="ejemploset.Persona"/>
 </qualifiedTypeNameHistroy>
