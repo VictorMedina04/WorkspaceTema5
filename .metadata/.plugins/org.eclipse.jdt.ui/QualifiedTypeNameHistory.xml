@@ -5,9 +5,10 @@
     <fullyQualifiedTypeName name="ejemplolist2.Persona"/>
     <fullyQualifiedTypeName name="java.lang.NoClassDefFoundError"/>
     <fullyQualifiedTypeName name="ejercicio01.Nota"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="ejercicio01.CrudNota"/>
+    <fullyQualifiedTypeName name="ejemploset.Persona"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
-    <fullyQualifiedTypeName name="ejemploset.Persona"/>
 </qualifiedTypeNameHistroy>

@@ -10,15 +10,10 @@ public class CrudPersona {
 		boolean encontrado = false;
 
 		for (Persona persona : lista) {
-			if (lista.equals(persona)) {
-
+			if (lista.contains(persona)) {
+				encontrado = true;
 			}
-		}
 
-		if (encontrado) {
-			return persona;
-		} else {
-			return null;
 		}
 	}
 }
