@@ -10,8 +10,7 @@ public class Principal {
 
 		List<String> nombres = new ArrayList<>();
 		Set<Integer> lista = new HashSet<>();
-		List<>
-		
+
 		nombres.add("Manuel");
 		nombres.add("Victor");
 		nombres.add("Moises");
@@ -26,8 +25,8 @@ public class Principal {
 		lista.add(6);
 		lista.add(7);
 
-		nombres.stream().filter(nombre -> nombre.contains("e")).forEach(System.out::println);
-		System.out.println();
+		Object a = nombres.stream().filter(nombre -> nombre.contains("e"));
+		System.out.println(a);
 		nombres.stream().limit(6).forEach(System.out::println);
 		System.out.println();
 
@@ -36,5 +35,16 @@ public class Principal {
 		int cantidadNombres = (int) nombres.stream().limit(10).count();
 
 		System.out.println(cantidadNombres);
+
+		for (String nombre : nombres) {
+			Boolean sonIguales = nombre.contains("e");
+
+			if (sonIguales) {
+
+				System.out.println(nombre);
+
+			}
+		}
+
 	}
 }
