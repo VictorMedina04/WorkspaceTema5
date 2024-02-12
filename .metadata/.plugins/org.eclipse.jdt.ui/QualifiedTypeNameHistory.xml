@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="ejemplolist2.CrudPersona"/>
     <fullyQualifiedTypeName name="ejemplolist2.Persona"/>
     <fullyQualifiedTypeName name="java.lang.NoClassDefFoundError"/>
@@ -9,7 +8,6 @@
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.lang.Boolean"/>
     <fullyQualifiedTypeName name="ejemploset.CrudPersona"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="ejemploset.Persona"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
     <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
@@ -20,4 +18,8 @@
     <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="ejemploMap.Alumno"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="org.w3c.dom.ls.LSInput"/>
+    <fullyQualifiedTypeName name="ejercicio02.Socio"/>
 </qualifiedTypeNameHistroy>
