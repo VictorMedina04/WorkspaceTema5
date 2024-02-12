@@ -49,8 +49,7 @@ public class Socio {
 
 	@Override
 	public String toString() {
-		return "Socio [nombre=" + nombre + ", apellidos=" + apellidos + ", dni=" + dni + ", cuotaBase=" + cuotaBase
-				+ "]";
+		return "nombre=" + nombre + " apellidos=" + apellidos + " dni=" + dni + " cuotaBase=" + cuotaBase + "\n";
 	}
 
 }

@@ -18,8 +18,12 @@
     <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="ejemploMap.Alumno"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="org.w3c.dom.ls.LSInput"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="ejercicio02.CrudSocio"/>
+    <fullyQualifiedTypeName name="java.lang.Class"/>
+    <fullyQualifiedTypeName name="ejercicio02.Club"/>
+    <fullyQualifiedTypeName name="utilidades.Leer"/>
     <fullyQualifiedTypeName name="ejercicio02.Socio"/>
 </qualifiedTypeNameHistroy>
