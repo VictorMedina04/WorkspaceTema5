@@ -36,15 +36,5 @@ public class Principal {
 
 		System.out.println(cantidadNombres);
 
-		for (String nombre : nombres) {
-			Boolean sonIguales = nombre.contains("e");
-
-			if (sonIguales) {
-
-				System.out.println(nombre);
-
-			}
-		}
-
 	}
 }
