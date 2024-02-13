@@ -71,10 +71,12 @@ public class Principal {
 //				System.out.printf("El total ha pagar por la pista es: %.2f", club.alquilarPista(precioPista, horas));
 //				System.out.println();
 //				break;
-//			case 6:
-//
-//				System.out.println();
-//				break;
+			case 6:
+				System.out.println("¿Que socio va ha pagar la cuota del mes? Introduzca dni");
+				
+				
+				System.out.println();
+				break;
 			}
 		} while (op != 0);
 

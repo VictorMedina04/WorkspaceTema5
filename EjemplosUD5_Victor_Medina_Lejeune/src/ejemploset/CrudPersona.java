@@ -48,7 +48,7 @@ public class CrudPersona {
 //		 (Persona) lista.stream().filter(persona213 -> persona213.getDni().equalsIgnoreCase(dni))
 //				.collect(Collectors.toList()).get(0);
 
-		return lista.stream().filter(persona213 -> persona213.getDni().equalsIgnoreCase(dni)).findAny().get();
+		return lista.stream().filter(persona1 -> persona1.getDni().equalsIgnoreCase(dni)).findAny().get();
 	}
 
 }

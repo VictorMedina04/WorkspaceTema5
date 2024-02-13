@@ -22,24 +22,15 @@ public class Club {
 		return "Club [crudSocio=" + crudSocio + "]";
 	}
 
-	// Falta decir el socio que lo va ha hacer
-//	public double alquilarPista(double precioPista, int horas) {
-//
-//		crudSocio.buscarSocioPorDni(dni);
-//
-//		return horas * precioPista;
-//	}
-//
-//	public double pagarCuota(String dni, double pagado) {
-//		double vuelta;
-//		double cuotaSocio = crudSocio.buscarSocioPorDni(dni).getCuotaBase();
-//		if (pagado > cuotaSocio) {
-//			vuelta = pagado;
-//		} else {
-//			vuelta = cuotaSocio - pagado;
-//		}
-//		return vuelta;
-//
-//	}
+	public double pagarCuota(String dni, double pagado) {
+		double vuelta;
+		if (pagado > crudSocio.buscarSocioPorDni(dni).getCuotaBase()) {
+			vuelta = pagado;
+		} else {
+			vuelta = crudSocio.buscarSocioPorDni(dni).getCuotaBase() - pagado;
+		}
+		return vuelta;
+
+	}
 
 }

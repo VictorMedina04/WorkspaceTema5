@@ -1,11 +1,10 @@
 package ejercicio02;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class CrudSocio {
 
-	private List<Socio> listaSocios = new ArrayList<Socio>();
+	private List<Socio> listaSocios;
 
 	public CrudSocio(List<Socio> listaSocios) {
 		super();
@@ -48,11 +47,7 @@ public class CrudSocio {
 	}
 
 	public void modificarSocio(String dni, double nuevaCuota) {
-		Socio socio = buscarSocioPorDni(dni);
-		if (socio != null) {
-			socio.setCuotaBase(nuevaCuota);
-		}
-
+		buscarSocioPorDni(dni).setCuotaBase(nuevaCuota);
 	}
 
 	public void borrarSocio(String dni) {
