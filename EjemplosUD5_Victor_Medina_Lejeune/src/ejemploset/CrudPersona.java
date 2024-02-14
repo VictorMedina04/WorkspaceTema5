@@ -30,7 +30,7 @@ public class CrudPersona {
 //			}
 //
 //		}
-
+//
 //		for (Persona persona1 : lista) {
 //			Boolean sonIguales = persona1.getDni().equalsIgnoreCase(dni);
 //
@@ -42,9 +42,9 @@ public class CrudPersona {
 //		}
 //
 //		return persona;
-
-		// lista.stream().filter(persona213 ->
-		// persona213.getDni().equalsIgnoreCase(dni)).findAny().get();
+//
+//		 lista.stream().filter(persona213 ->
+//		 persona213.getDni().equalsIgnoreCase(dni)).findAny().get();	
 //		 (Persona) lista.stream().filter(persona213 -> persona213.getDni().equalsIgnoreCase(dni))
 //				.collect(Collectors.toList()).get(0);
 
