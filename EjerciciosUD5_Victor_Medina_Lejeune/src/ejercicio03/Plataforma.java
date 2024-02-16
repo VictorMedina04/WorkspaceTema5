@@ -23,4 +23,37 @@ public class Plataforma {
 	}
 
 	// nota media,media suspensos, num suspensos
+
+	public double calcularNotaMediaCurso() {
+		double notaMedia = 0;
+
+		for (Alumno alumno : crudAlumno.getListaAlumno()) {
+			notaMedia += alumno.getNotaMedia();
+		}
+		return notaMedia / crudAlumno.getListaAlumno().size();
+	}
+
+	public int calcularNumeroDeSuspensos() {
+		int cinco = 5;
+		int contador = 0;
+		for (Alumno alumno : crudAlumno.getListaAlumno()) {
+			if (alumno.getNotaMedia() < cinco) {
+				contador++;
+			}
+		}
+		return contador;
+	}
+
+	public double calcularMediaSuspensos() {
+		double notaMediaSuspensos = 0;
+		int cinco = 5;
+
+		for (Alumno alumno : crudAlumno.getListaAlumno()) {
+			if (alumno.getNotaMedia() < cinco)
+				notaMediaSuspensos += alumno.getNotaMedia();
+		}
+
+		return notaMediaSuspensos / calcularNumeroDeSuspensos();
+
+	}
 }

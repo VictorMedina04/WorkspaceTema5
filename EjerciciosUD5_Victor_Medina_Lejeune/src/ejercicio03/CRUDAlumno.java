@@ -4,7 +4,7 @@ import java.util.Set;
 
 public class CRUDAlumno {
 
-	Set<Alumno> listaAlumno;
+	private Set<Alumno> listaAlumno;
 
 	public CRUDAlumno(Set<Alumno> listaAlumno) {
 		super();

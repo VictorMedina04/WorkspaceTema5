@@ -9,7 +9,7 @@ public class Principal {
 	public static void main(String[] args) {
 
 		Set<Alumno> listaAlumnos = new HashSet<Alumno>();
-		CRUDAlumno crudAlumno = new CRUDAlumno(listaAlumnos);
+
 		int op;
 		double notaMedia, nuevaNota;
 		String nombre, apellido, dni;
@@ -18,12 +18,17 @@ public class Principal {
 		listaAlumnos.add(new Alumno(7, "Álvaro", "Nuñez", "23642523E"));
 		listaAlumnos.add(new Alumno(7, "Fernando", "Alfaro", "76347232O"));
 
+		CRUDAlumno crudAlumno = new CRUDAlumno(listaAlumnos);
+		Plataforma plataforma = new Plataforma(crudAlumno);
+
 		do {
 			System.out.println("""
 					1-Añadir
 					2-Modificar
 					3-Mostrar
 					4-Borrar
+					5-Nota media de los alumnos
+					6-Número de suspensos y media de suspensos
 					0-Salir
 					""");
 			op = Leer.datoInt();
@@ -71,6 +76,15 @@ public class Principal {
 
 				crudAlumno.borrarAlumno(dni);
 				break;
+			case 5:
+				System.out.printf("La nota media de los alumnos es: %.2f \n", plataforma.calcularNotaMediaCurso());
+				break;
+			case 6:
+				System.out.println("El número de suspensos es:" + plataforma.calcularNumeroDeSuspensos());
+				System.out.printf("La media de suspensos entre los alumnos es: %.2f \n",
+						plataforma.calcularMediaSuspensos());
+				break;
+
 			case 0:
 				System.out.println("Ha salido, gracias por usar el programa");
 				break;
