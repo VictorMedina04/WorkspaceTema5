@@ -5,23 +5,50 @@ import java.util.Collections;
 import java.util.List;
 
 public class Ppal {
+
 	public static void main(String[] args) {
 
-		List<Corredor> listaCorredores = new ArrayList<Corredor>();
+		List<Corredor> corredores = new ArrayList<>();
 
-		listaCorredores.add(new Corredor(1, 0.1, "Victor Medina"));
-		listaCorredores.add(new Corredor(2, 3.33, "Manuel Gomez"));
-		listaCorredores.add(new Corredor(3, 2.1, "Moises"));
-		listaCorredores.add(new Corredor(4, 6.3, "Bruno"));
-		listaCorredores.add(new Corredor(5, 2.8, "Joaquin"));
-		listaCorredores.add(new Corredor(6, 1.43, "Carlos"));
-		listaCorredores.add(new Corredor(7, 0.001, "Luismi"));
-		listaCorredores.add(new Corredor(8, 0.5, "Angel"));
-		listaCorredores.add(new Corredor(9, 0.3, "Miguel"));
+		corredores.add(new Corredor(4, 1.43, "Jesse"));
+		corredores.add(new Corredor(8, 1.11, "Ángel Narananjo"));
+		corredores.add(new Corredor(3, 2.23, "Abel Antón"));
+		corredores.add(new Corredor(4, 2.23, "Abel Antón"));
+		corredores.add(new Corredor(1, 1.12, "Luismi"));
+		corredores.add(new Corredor(6, 1.13, "Miguel Campos"));
 
-		// Comparar
-		Collections.sort(listaCorredores);
-		Collections.sort(listaCorredores, new CompararPorMarca());
+		// Ordenar de forma natural
+		System.out.println("Ordenar de forma natural");
 
+		Collections.sort(corredores);
+
+		for (Corredor cor : corredores) {
+			System.out.println(cor);
+		}
+
+		System.out.println();
+		// Ordenar de forma no natural. En este caso necesito pasar 2 parámetros, la
+		// lista y un objeto de la clase donde he creado el comparar
+
+		System.out.println("Ordenar de forma no natural por marca");
+		Collections.sort(corredores, new CompararPorMarca());
+
+		for (Corredor corredor : corredores) {
+			System.out.println(corredor);
+		}
+		System.out.println();
+		System.out.println("Ordenar de forma no natural, por nombre con un String");
+		Collections.sort(corredores, new ComparaNombre());
+		for (Corredor corredor : corredores) {
+			System.out.println(corredor);
+		}
+
+		System.out.println();
+		System.out.println("Ordenar por Marca y Dorsal");
+		Collections.sort(corredores, new OrdenarMarcaDorsal());
+		for (Corredor corredor : corredores) {
+			System.out.println(corredor);
+		}
 	}
+
 }
