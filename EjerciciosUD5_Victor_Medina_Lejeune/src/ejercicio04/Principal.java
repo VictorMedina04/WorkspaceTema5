@@ -7,7 +7,7 @@ public class Principal {
 
 	public static void main(String[] args) {
 
-		Map<Contacto, Contacto> agenda = new HashMap<Contacto, Contacto>();
+		Map<Contacto, String> agenda = new HashMap<Contacto, String>();
 
 	}
 
