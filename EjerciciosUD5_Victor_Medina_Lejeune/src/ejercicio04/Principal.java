@@ -9,11 +9,7 @@ public class Principal {
 
 	public static void main(String[] args) {
 
-<<<<<<< HEAD
-		Map<Contacto, String> agenda = new HashMap<Contacto, String>();
-=======
 		Map<Contacto, String> listaContactos = new HashMap<Contacto, String>();
->>>>>>> b3018301bd56680bb66e32d7ed17f9643b6456e2
 
 		Agenda agenda = new Agenda(listaContactos);
 		int op;

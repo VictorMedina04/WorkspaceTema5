@@ -15,12 +15,7 @@ public class Agenda {
 	// añadir,borrar,modificar,buscar,mostrar
 
 	public void addContacto(Contacto contacto, String telefono) {
-
-<<<<<<< HEAD
-		listaContactos.put(contacto, telefono);
-=======
 		listaContactos.put(contacto, contacto.getTelefono());
->>>>>>> b3018301bd56680bb66e32d7ed17f9643b6456e2
 	}
 
 	public void borrarContacto(String nombre) {
@@ -30,32 +25,17 @@ public class Agenda {
 	public Contacto buscarContactoPorNombre(String nombre) {
 
 		Contacto contacto = null;
-<<<<<<< HEAD
 
-		Set<Contacto> listaClaves = listaContactos.keySet();
-
-		for (Contacto contacto2 : listaClaves) {
-			if (contacto2.getNombre().equals(nombre)) {
-=======
 		Set<Contacto> listaClaves = listaContactos.keySet();
 
 		for (Contacto contacto2 : listaClaves) {
 			if (contacto2.getNombre().equalsIgnoreCase(nombre)) {
->>>>>>> b3018301bd56680bb66e32d7ed17f9643b6456e2
+
 				contacto = contacto2;
 			}
 		}
 		return contacto;
-<<<<<<< HEAD
 
-	}
-
-	public void modificarContacto(String nombre) {
-
-	}
-
-	public void mostrarContactos() {
-=======
 	}
 
 	public Contacto buscarContactoPorTelefono(String telefono) {
@@ -80,7 +60,6 @@ public class Agenda {
 	public void modificarApellidoDelContacto(String telefono, String nuevoApellido) {
 
 		buscarContactoPorTelefono(telefono).setApellido(nuevoApellido);
->>>>>>> b3018301bd56680bb66e32d7ed17f9643b6456e2
 
 	}
 
