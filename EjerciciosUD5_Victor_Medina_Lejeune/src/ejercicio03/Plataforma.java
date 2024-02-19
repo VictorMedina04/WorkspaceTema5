@@ -36,6 +36,7 @@ public class Plataforma {
 	public int calcularNumeroDeSuspensos() {
 		int cinco = 5;
 		int contador = 0;
+
 		for (Alumno alumno : crudAlumno.getListaAlumno()) {
 			if (alumno.getNotaMedia() < cinco) {
 				contador++;

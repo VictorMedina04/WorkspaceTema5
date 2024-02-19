@@ -67,7 +67,7 @@ public class Principal {
 				System.out.println("Para mostrar a un alumno introduzca su dni");
 				dni = Leer.dato();
 
-				crudAlumno.mostrarAlumno(dni);
+				crudAlumno.mostrarAlumnos();
 
 				break;
 			case 4:

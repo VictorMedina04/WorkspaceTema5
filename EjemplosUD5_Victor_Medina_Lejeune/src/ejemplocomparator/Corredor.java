@@ -42,15 +42,17 @@ public class Corredor implements Comparable<Corredor> {
 		return "Corredor [dorsal=" + dorsal + ", marca=" + marca + ", nombre=" + nombre + "]";
 	}
 
-	public int compareTo(Corredor corredor) {
+	@Override
+	public int compareTo(Corredor o) {
 
-		if (this.dorsal < corredor.dorsal) {
+		if (this.dorsal < o.dorsal) {
 			return -1;
 		} else {
-			if (this.dorsal > corredor.dorsal) {
+			if (this.dorsal > o.dorsal) {
 				return 1;
 			}
-			return 0;
 		}
+		return 0;
 	}
+
 }

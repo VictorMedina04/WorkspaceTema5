@@ -29,13 +29,13 @@ public class CRUDAlumno {
 	}
 
 	public Alumno buscarAlumnoPorDNI(String dni) {
-		Alumno alumnoIgual = null;
+
 		for (Alumno alumno : listaAlumno) {
 			if (alumno.getDni().equalsIgnoreCase(dni)) {
-				alumnoIgual = alumno;
+				return alumno;
 			}
 		}
-		return alumnoIgual;
+		return null;
 	}
 
 	public void modificarNotaAlumno(String dni, double notaNueva) {
@@ -43,14 +43,11 @@ public class CRUDAlumno {
 		buscarAlumnoPorDNI(dni).setNotaMedia(notaNueva);
 	}
 
-	public void mostrarAlumno(String dni) {
+	public void mostrarAlumnos() {
 
-		if (buscarAlumnoPorDNI(dni) == null) {
-			System.out.println("El alumno no esta en la lista");
-		} else {
-			System.out.println(buscarAlumnoPorDNI(dni));
+		for (Alumno alumno : listaAlumno) {
+			System.out.println(alumno);
 		}
-
 	}
 
 	public void borrarAlumno(String dni) {
