@@ -1,25 +1,17 @@
-package ejercicio05;
+package ejemploV2;
 
-public class Persona implements Comparable<Persona> {
+public class Persona {
 
-	private int edad;
 	private String nombre;
 	private String apellido;
 	private String dni;
+	private int edad;
 
-	public Persona(int edad, String nombre, String apellido, String dni) {
+	public Persona(String nombre, String apellido, String dni, int edad) {
 		super();
-		this.edad = edad;
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.dni = dni;
-	}
-
-	public int getEdad() {
-		return edad;
-	}
-
-	public void setEdad(int edad) {
 		this.edad = edad;
 	}
 
@@ -47,12 +39,17 @@ public class Persona implements Comparable<Persona> {
 		this.dni = dni;
 	}
 
+	public int getEdad() {
+		return edad;
+	}
+
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+
 	@Override
 	public String toString() {
-		return "Persona [edad=" + edad + ", nombre=" + nombre + ", apellido=" + apellido + ", dni=" + dni + "]";
+		return "Persona [nombre=" + nombre + ", apellido=" + apellido + ", dni=" + dni + ", edad=" + edad + "]";
 	}
 
-	public int compareTo(Persona persona) {
-
-	}
 }
