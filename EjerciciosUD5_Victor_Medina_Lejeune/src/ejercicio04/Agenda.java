@@ -15,7 +15,6 @@ public class Agenda {
 	// añadir,borrar,modificar,buscar,mostrar
 
 	public void addContacto(Contacto contacto, String telefono) {
-
 		listaContactos.put(contacto, contacto.getTelefono());
 	}
 
@@ -26,14 +25,17 @@ public class Agenda {
 	public Contacto buscarContactoPorNombre(String nombre) {
 
 		Contacto contacto = null;
+
 		Set<Contacto> listaClaves = listaContactos.keySet();
 
 		for (Contacto contacto2 : listaClaves) {
 			if (contacto2.getNombre().equalsIgnoreCase(nombre)) {
+
 				contacto = contacto2;
 			}
 		}
 		return contacto;
+
 	}
 
 	public Contacto buscarContactoPorTelefono(String telefono) {
