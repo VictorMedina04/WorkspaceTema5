@@ -55,21 +55,21 @@ public class Principal {
 				agenda.modificarApellidoDelContacto(telefono, nuevoApellido);
 				break;
 			case 4:
-				System.out.println("Introduzca el nombre del contacto que quiere modificar");
-				nombre = Leer.dato();
+				System.out.println("Introduzca el telefono del contacto que quiere modificar");
+				telefono = Leer.dato();
 				System.out.println("Introduzca el nuevo telefono");
 				nuevoTelefono = Leer.dato();
-				agenda.modificarTelefonoDelContacto(nombre, nuevoTelefono);
+				agenda.modificarTelefonoDelContacto(telefono, nuevoTelefono);
 				break;
 			case 5:
-				System.out.println("Introduzca el nombre del contacto que quiere borrar");
-				nombre = Leer.dato();
-				agenda.borrarContacto(nombre);
+				System.out.println("Introduzca el telefono del contacto que quiere borrar");
+				telefono = Leer.dato();
+				agenda.borrarContacto(telefono);
 				break;
 			case 6:
-				System.out.println("Introduzca el nombre del contacto que quiere mostrar");
-				nombre = Leer.dato();
-				agenda.mostrarContacto(nombre);
+				System.out.println("Introduzca el telefono del contacto que quiere mostrar");
+				telefono = Leer.dato();
+				agenda.mostrarContacto(telefono);
 				break;
 			case 7:
 				agenda.mostrarAgenda();

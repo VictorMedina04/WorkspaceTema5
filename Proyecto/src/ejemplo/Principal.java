@@ -8,7 +8,6 @@ import java.util.Set;
 public class Principal {
 	public static void main(String[] args) {
 
-		
 		List<String> nombres = new ArrayList<>();
 		Set<Integer> lista = new HashSet<>();
 
@@ -26,9 +25,13 @@ public class Principal {
 		lista.add(6);
 		lista.add(7);
 
-		Object a = nombres.stream().findAny().filter(nombre -> nombre.contains("e")).get();
+		Object a = nombres.stream().filter(nombre -> nombre.contains("e")).findAny().get();
+		Object ab = nombres.stream().filter(nombre2 -> nombre2.contains("e")).findFirst().get();
 		System.out.println(a);
+		System.out.println(ab);
+
 		System.out.println();
+
 		nombres.stream().limit(6).forEach(System.out::println);
 		System.out.println();
 

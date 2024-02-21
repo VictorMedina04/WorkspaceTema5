@@ -40,11 +40,11 @@ public class CRUDPersona {
 
 	public List<Persona> buscarPersonaPorEdad(int edad) {
 
-		listaPersona.stream().filter(persona -> persona.getEdad() == edad).co.collect(null);
+		listaPersona.stream().filter(persona -> persona.getEdad() == edad).t;
 	}
 
-	public borrar() {
-		listaPersona.stream().empty();
+	public void borrar() {
+		listaPersona.stream().
 	}
 
 }
