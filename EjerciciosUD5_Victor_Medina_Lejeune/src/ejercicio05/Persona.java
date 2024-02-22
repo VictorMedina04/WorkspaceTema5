@@ -52,7 +52,11 @@ public class Persona implements Comparable<Persona> {
 		return "Persona [edad=" + edad + ", nombre=" + nombre + ", apellido=" + apellido + ", dni=" + dni + "]";
 	}
 
+	// El natural se le pasan una persona y el no natural se le pasan dos personas
+
+	//
 	public int compareTo(Persona persona) {
 
+		return -(this.nombre.toLowerCase().compareTo(persona.getNombre().toLowerCase()));
 	}
 }
