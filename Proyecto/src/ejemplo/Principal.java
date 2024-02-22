@@ -10,6 +10,7 @@ public class Principal {
 
 		List<String> nombres = new ArrayList<>();
 		Set<Integer> lista = new HashSet<>();
+		int numeros[] = new int[5];
 
 		nombres.add("Manuel");
 		nombres.add("Victor");
