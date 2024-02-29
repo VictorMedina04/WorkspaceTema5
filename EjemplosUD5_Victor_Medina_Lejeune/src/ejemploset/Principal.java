@@ -38,4 +38,10 @@ public class Principal {
 		System.out.println(crudPersona.buscarPorDni("24524F"));
 		System.out.println(lista);
 	}
+
+
+
+static void mostrarMenu{
+	
+}
 }

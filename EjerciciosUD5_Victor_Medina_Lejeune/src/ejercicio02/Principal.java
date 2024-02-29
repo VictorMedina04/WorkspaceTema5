@@ -9,6 +9,11 @@ public class Principal {
 
 	public static void main(String[] args) {
 
+		mostraMenu();
+
+	}
+
+	static void mostraMenu() {
 		List<Socio> listaSocios = new ArrayList<Socio>();
 		CrudSocio crudSocio = new CrudSocio(listaSocios);
 		Club club = new Club(crudSocio);
@@ -20,7 +25,6 @@ public class Principal {
 		listaSocios.add(new Socio("Victor", "Medina", "57235T", cuotaBase));
 		listaSocios.add(new Socio("Alvaro", "Nuñez", "325634R", cuotaBase));
 		listaSocios.add(new Socio("Fernando", "Jimenez", "623721P", cuotaBase));
-
 		do {
 			System.out.println("""
 					1-Añadir
@@ -73,13 +77,10 @@ public class Principal {
 //				break;
 			case 6:
 				System.out.println("¿Que socio va ha pagar la cuota del mes? Introduzca dni");
-				
-				
+
 				System.out.println();
 				break;
 			}
 		} while (op != 0);
-
 	}
-
 }
