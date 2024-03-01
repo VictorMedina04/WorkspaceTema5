@@ -22,6 +22,7 @@ public class Principal {
 
 		do {
 			System.out.println("""
+					0-Salir
 					1-Añadir palabra
 					2-Modificar signifiacado
 					3-Borrar una palabra
