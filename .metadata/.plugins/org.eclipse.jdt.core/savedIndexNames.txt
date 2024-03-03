@@ -1,12 +1,5 @@
-<<<<<<< HEAD
 INDEX VERSION 1.134+C:\Users\victo\Victor\Programacion\WorkspaceTema5\.metadata\.plugins\org.eclipse.jdt.core
 1721901917.index
 1865797976.index
 3377580705.index
-=======
-INDEX VERSION 1.134+C:\Users\medina.levic24_trian\Desktop\Programacion\WorkspaceTema5\.metadata\.plugins\org.eclipse.jdt.core
-1865797976.index
-3413725848.index
-1721901917.index
->>>>>>> 9098e64e63ef19246b7dae95c7c8a2aeeb11cdce
 2762155709.index
