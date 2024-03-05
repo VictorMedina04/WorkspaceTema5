@@ -19,7 +19,7 @@ public class Ppal {
 
 		Trastero trastero1 = new Trastero(35, "C/6", 78, 300, false);
 		Trastero trastero2 = new Trastero(100, "C/4", 45, 1000, true);
-		Trastero trastero3 = new Trastero(15, "C/5", 33, 100, true);
+		Trastero trastero3 = new Trastero(15, "C/5", 33, 300, true);
 		Trastero trastero4 = new Trastero(65, "C/9", 11, 800, false);
 
 		oficina.addTrastero(trastero1);

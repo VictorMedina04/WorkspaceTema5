@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Oficina {
 
-	List<Trastero> listaTrasteros;
+	private List<Trastero> listaTrasteros;
 
 	public Oficina(List<Trastero> listaTrasteros) {
 		super();

@@ -4,8 +4,8 @@ public class Trastero implements Comparable<Trastero> {
 
 	private double metrosCuadrados;
 	private String direccion;
-	int numTrastero;
-	double precio;
+	private int numTrastero;
+	private double precio;
 	private boolean ocupado;
 
 	public Trastero() {
