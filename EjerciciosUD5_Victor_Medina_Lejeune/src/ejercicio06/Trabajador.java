@@ -55,13 +55,18 @@ public class Trabajador implements Comparable<Trabajador> {
 
 	@Override
 	public int compareTo(Trabajador trabajador) {
+
 		ComparaPorHoras comparaPorHoras = new ComparaPorHoras();
 
-		if (this.getSueldoFinal() < trabajador.getSueldoFinal()) {
-			return -1;
+		if (this.getSueldoFinal() == trabajador.getSueldoFinal()) {
+			return comparaPorHoras.compare(this, trabajador);
 		} else {
 			if (this.getSueldoFinal() > trabajador.getSueldoFinal()) {
 				return 1;
+			} else {
+				if (this.getSueldoFinal() < trabajador.getSueldoFinal()) {
+					return -1;
+				}
 			}
 		}
 		return 0;
