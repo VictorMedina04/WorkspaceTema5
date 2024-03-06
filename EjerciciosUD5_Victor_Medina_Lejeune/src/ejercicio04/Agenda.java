@@ -24,14 +24,12 @@ public class Agenda {
 
 //	public List<Contacto> buscarContactoPorNombre(String nombre) {
 //
-//		List<Contacto> listaContactoEncontrado = new ArrayList<Contacto>();
-//
 //		Set<Contacto> listaClaves = listaContactos.keySet();
 //
 //		for (Contacto contacto : listaClaves) {
 //			if (contacto2.getNombre().equalsIgnoreCase(nombre)) {
 //
-//				listaContactoEncontrado.add(contacto);
+//				listaClaves.add(contacto);
 //
 //			}
 //		}
@@ -41,14 +39,12 @@ public class Agenda {
 
 	public Contacto buscarContactoPorTelefono(String telefono) {
 
-		Contacto contacto = null;
-
-		for (Contacto contacto2 : listaContactos.keySet()) {
-			if (contacto2.getTelefono().equalsIgnoreCase(telefono)) {
-				contacto = contacto2;
+		for (Contacto contacto : listaContactos.keySet()) {
+			if (contacto.getTelefono().equalsIgnoreCase(telefono)) {
+				return contacto;
 			}
 		}
-		return contacto;
+		return null;
 	}
 
 	public void modificarNombreDelContacto(String telefono, String nuevoNombre) {
