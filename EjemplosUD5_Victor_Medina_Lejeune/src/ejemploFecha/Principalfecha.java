@@ -1,4 +1,4 @@
-package ejemplosParte2;
+package ejemploFecha;
 
 import java.time.LocalDate;
 
