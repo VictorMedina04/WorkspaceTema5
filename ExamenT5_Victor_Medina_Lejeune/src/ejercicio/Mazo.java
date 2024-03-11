@@ -94,20 +94,12 @@ public class Mazo {
 
 		Collections.sort(listaCarta);
 
-		for (Carta carta : listaCarta) {
-			System.out.println(carta.compareTo(carta));
-
-		}
 	}
 
 	public void ordenarNoNatural() {
 
-		OrdenarPorPuntuacion ordenarPorPuntuacion = new OrdenarPorPuntuacion();
 		Collections.sort(listaCarta, new OrdenarPorPuntuacion());
 
-		for (Carta carta : listaCarta) {
-			System.out.println(ordenarPorPuntuacion.compare(carta, carta));
-		}
 	}
 
 }
