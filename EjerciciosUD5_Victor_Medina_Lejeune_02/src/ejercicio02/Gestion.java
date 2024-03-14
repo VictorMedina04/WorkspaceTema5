@@ -31,9 +31,13 @@ public class Gestion {
 		listaPalabras.add(palabra);
 	}
 
-	public void ordenarAlfabeticamente() {
+	public void mostrarLista(List<String> lista) {
+		lista.forEach(System.out::println);
+	}
 
-		listaPalabras.stream().sorted().toList();
+	public List<String> ordenarAlfabeticamente() {
+
+		return listaPalabras.stream().sorted().toList();
 	}
 
 	public String buscarCadenaPorTeclado(String string) {
@@ -41,9 +45,12 @@ public class Gestion {
 		return listaPalabras.stream().filter(string1 -> string1.equalsIgnoreCase(string)).findFirst().get();
 	}
 
-	public void borrarImpares() {
+	public List<String> buscarImpares() {
+		return listaPalabras.stream().filter(string -> string.length() % 2 != 0).toList();
+	}
 
-		listaPalabras.stream().filter(string -> string.length() % 2 != 0).toList();
+	public void borrarImpares() {
+		listaPalabras.removeAll(buscarImpares());
 	}
 
 	public List<String> convertirEnMayusculas() {
