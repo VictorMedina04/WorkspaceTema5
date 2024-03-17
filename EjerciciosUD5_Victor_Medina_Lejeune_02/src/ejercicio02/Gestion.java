@@ -31,11 +31,18 @@ public class Gestion {
 		listaPalabras.add(palabra);
 	}
 
+<<<<<<< HEAD
 	public void mostrarLista(List<String> listas) {
 
 		listas.stream().forEach(System.out::println);
 	}
 
+=======
+	public void mostrarLista(List<String> lista) {
+		lista.forEach(System.out::println);
+	}
+
+>>>>>>> 9233eeeb52c28befe1c2f6326f5c49995efb6792
 	public List<String> ordenarAlfabeticamente() {
 
 		return listaPalabras.stream().sorted().toList();
@@ -46,9 +53,12 @@ public class Gestion {
 		return listaPalabras.stream().filter(string1 -> string1.equalsIgnoreCase(string)).findFirst().get();
 	}
 
-	public void borrarImpares() {
+	public List<String> buscarImpares() {
+		return listaPalabras.stream().filter(string -> string.length() % 2 != 0).toList();
+	}
 
-		listaPalabras.stream().filter(string -> string.length() % 2 != 0).toList();
+	public void borrarImpares() {
+		listaPalabras.removeAll(buscarImpares());
 	}
 
 	public List<String> convertirEnMayusculas() {
