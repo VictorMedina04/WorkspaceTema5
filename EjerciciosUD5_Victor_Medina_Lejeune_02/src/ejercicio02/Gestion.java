@@ -31,9 +31,14 @@ public class Gestion {
 		listaPalabras.add(palabra);
 	}
 
-	public void ordenarAlfabeticamente() {
+	public void mostrarLista(List<String> listas) {
 
-		listaPalabras.stream().sorted().toList();
+		listas.stream().forEach(System.out::println);
+	}
+
+	public List<String> ordenarAlfabeticamente() {
+
+		return listaPalabras.stream().sorted().toList();
 	}
 
 	public String buscarCadenaPorTeclado(String string) {

@@ -40,7 +40,7 @@ public class Principal {
 			switch (op) {
 			case 1:
 
-				System.out.println(gestion.ordenarAlfabeticamente());
+				gestion.mostrarLista(gestion.ordenarAlfabeticamente());
 				System.out.println();
 
 				break;
